@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://kit.fontawesome.com/01f029716b.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/01f029716b.js" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <title> Lista De Tareas</title>
+</head>
+
+<body>
+  <!-- DIV DEL NAVEGADOR -->
+  <div class="container-fluid" id="container">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="Navegador">
+        <div class="container-fluid">
+          <a class="navbar-brand"><i class="fa-solid fa-list-check "></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"> <b>Inicio</b> </a>
+              <a class="nav-link" href="integrantes.html">contactanos</a>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- tajeta de idicadores -->
+  <div class="container-fluid">
+ 
+    <div class="row justify-content-md-center">
+
+      <div class="col-md-2" id="indicadores">
+        <div class="row">
+          <div class="col-md-3">
+            <i class="bi bi-list-stars"></i>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <h2 id="registradas"  > </h2>
+            </div>
+            <div class="row">
+              <p>Tareas Registradas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-auto"id="indicadores">
+         <div class="row">
+          <div class="col-md-3">
+            <i class="bi bi-list-stars"></i>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <h2 id="Tterminadas"  > </h2>
+            </div>
+            <div class="row">
+              <p>Tareas Terminadas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"id="indicadores">
+        <div class="row">
+          <div class="col-md-3">
+            <i class="bi bi-list-stars"></i>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <h2 id="Ppendiente"> </h2>
+            </div>
+            <div class="row">
+              <p>Tareas Pendientes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+   
+
+   </div>
+  
+</div>
+
+  <!--contenedor Lista  De Tareas  -->
+ 
+
+  <div class="container mt-5">
+    <h3>
+      <i class="fa-solid fa-list-check float-left mr-2"></i>
+      Lista De Tareas
+    </h3>
+    <form id="formulario">
+      <input type="text" id="tarea" class="form-control my-3">
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+
+    <div id="listaTarea" class="mt-4">
+
+      <div class="alert alert-primary" role="alert">
+        <i class="fa-solid fa-list-check  " id="ilista" ></i>
+        <b id="texto">Actividad</b> - Estado
+        <span class="float-right" id="Iacciones">
+          <i class="material-icons">Terminada</i>
+          <i class="material-icons">En Proceso</i>
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+ <!--
+   footer
+ -->
+ <div class="container-fluid" id="container">
+  <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="foot">
+      <div class="container-fluid">
+        <a class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html"> <b>Inicio</b> </a>
+            <a class="nav-link" href="integrantes.html">contactanos</a>
+           
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<div class="card-body">
+  <blockquote class="blockquote mb-0">
+    <b><p>Programación web || Grupo 03 </p></b> 
+    <footer class="blockquote-footer">Universidad Popular Del Cesar <cite title="Source Title"> --> Valledupar - Cesar</cite></footer>
+  </blockquote>
+</div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+  </script>
+  <script src="app.js"></script>
+</body>
+
+
+
+</html>
